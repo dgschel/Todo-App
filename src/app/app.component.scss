@@ -1,0 +1,49 @@
+@import "colors.scss";
+
+.background-image-light {
+    background-image: url("../assets/images/bg-mobile-light.jpg"), $check-background;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.background-image-dark {
+    background-image: url("../assets/images/bg-mobile-dark.jpg"), $check-background;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.container-margin-top {
+    margin-top: -10rem;
+}
+
+.title {
+    letter-spacing: 1rem;
+    color: var(--text-color-header);
+    font-weight: 700;
+}
+
+.list-group {
+    font-size: 1rem;
+}
+
+@media screen and (min-width: 376px) {
+    .background-image-light {
+        background-image: url("../assets/images/bg-desktop-light.jpg"), $check-background;;
+        height: 300px;
+    }
+
+    .background-image-dark {
+        background-image: url("../assets/images/bg-desktop-dark.jpg"), $check-background;
+        height: 300px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .container-margin-top {
+        margin-top: -12rem;
+    }
+}
